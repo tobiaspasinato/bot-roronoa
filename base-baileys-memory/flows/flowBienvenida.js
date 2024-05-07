@@ -3,7 +3,7 @@ import delay from "../app";
 import flowOpcion1 from "./flowOpcion1";
 import flowOpcion2 from "./flowOpcion2";
 
-const flowPrincipal = bot.addKeyword('bot').addAnswer(
+const flowPrincipal = bot.addKeyword('hola').addAnswer(
     [
         '1️⃣ Si sabes que hacen y como lo hacen envie "1".',
         '2️⃣ Si sabes que hacen pero no sabes como lo hacen envie "2".',
