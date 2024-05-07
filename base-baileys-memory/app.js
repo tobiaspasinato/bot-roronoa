@@ -9,7 +9,9 @@ import flowOpcion2 from "./flows/flowOpcion2.js";
 
 
 const GLOBAL_STATE = [];
-
+export default function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 const main = async () => {
 const adapterDB = new MockAdapter();
 const adapterFlow = bot.createFlow([
