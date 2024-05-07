@@ -1,3 +1,4 @@
+//import "dotenv/config";
 import bot from "@bot-whatsapp/bot";
 import QRPortalWeb from "@bot-whatsapp/portal";
 import BaileysProvider from "@bot-whatsapp/provider/baileys";
