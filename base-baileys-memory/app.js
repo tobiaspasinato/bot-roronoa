@@ -6,6 +6,7 @@ import MockAdapter from "@bot-whatsapp/database/mock";
 import flowPrincipal from "./flows/flowBienvenida.js";
 import flowOpcion1 from "./flows/flowOpcion1.js";
 import flowOpcion2 from "./flows/flowOpcion2.js";
+import flowOpcion3 from "./flows/flowOpcion3.js";
 
 
 const GLOBAL_STATE = [];
@@ -18,6 +19,7 @@ const adapterFlow = bot.createFlow([
     flowPrincipal,
     flowOpcion1,
     flowOpcion2,
+    flowOpcion3,
 ]);
 const adapterProvider = bot.createProvider(BaileysProvider);
 

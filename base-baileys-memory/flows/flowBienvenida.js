@@ -2,6 +2,7 @@ import bot from "@bot-whatsapp/bot";
 import delay from "../app";
 import flowOpcion1 from "./flowOpcion1";
 import flowOpcion2 from "./flowOpcion2";
+import flowOpcion3 from "./flowOpcion3";
 
 const flowPrincipal = bot.addKeyword('hola').addAnswer(
     [
@@ -19,7 +20,7 @@ const flowPrincipal = bot.addKeyword('hola').addAnswer(
             return await gotoFlow(flowOpcion2);
         }
         else if(ctx.body == 3){
-            return await gotoFlow();
+            return await gotoFlow(flowOpcion3);
         }
         else if(ctx.body == 0){
             return await endFlow({body : '👋Nos vemos pronto!'});
